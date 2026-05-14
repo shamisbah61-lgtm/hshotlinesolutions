@@ -636,13 +636,13 @@ function MainApp() {
           {/* Left: copyright */}
           <div className="footer-copy-row" style={{ fontSize:".68rem", letterSpacing:"2px", textTransform:"uppercase", color:"var(--text-muted)", display:"flex", alignItems:"center", flexWrap:"wrap", gap:"4px" }}>
             <span>© 2026</span>
-            <a href="https://instagram.com/hshotlinesolutions" target="_blank" rel="noopener noreferrer" className="footer-link">hshotlinesolutions</a>
+            <a href="https://instagram.com/hotlinesolutions" target="_blank" rel="noopener noreferrer" className="footer-link">hotlinesolutions</a>
             <span>. All rights reserved.</span>
           </div>
           {/* Right: powered by */}
           <div style={{ fontSize:".68rem", letterSpacing:"2px", textTransform:"uppercase", color:"var(--text-muted)", display:"flex", alignItems:"center", gap:"4px" }}>
             <span>Powered by</span>
-            <a href="https://doquad.com" target="_blank" rel="noopener noreferrer" className="footer-link">doquad</a>
+            <a href="https://instagram.com/doquad.in" target="_blank" rel="noopener noreferrer" className="footer-link">doquad</a>
           </div>
         </div>
       </footer>

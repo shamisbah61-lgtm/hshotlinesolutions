@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FileText, Award, UserCheck, ShieldAlert, CheckCircle, FileSignature, Briefcase, Landmark } from "lucide-react";
+import { Award, UserCheck, ShieldAlert, CheckCircle, FileSignature, Briefcase, Landmark } from "lucide-react";
 import Cursor from "./Cursor";
 import SubpageNav from "./SubpageNav";
 import SubpageFooter from "./SubpageFooter";

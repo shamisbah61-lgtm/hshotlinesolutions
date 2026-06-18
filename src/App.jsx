@@ -267,10 +267,6 @@ function MainApp() {
   }, []);
 
   useEffect(() => {
-    const el = document.createElement("style");
-    el.textContent = BASE_STYLES;
-    document.head.appendChild(el);
-
     const onMove = e => {
       mx.current = e.clientX; my.current = e.clientY;
       if (cursorRef.current) { cursorRef.current.style.left = e.clientX+"px"; cursorRef.current.style.top = e.clientY+"px"; }
@@ -291,7 +287,6 @@ function MainApp() {
       document.removeEventListener("mousemove", onMove);
       window.removeEventListener("scroll", onScroll);
       cancelAnimationFrame(raf.current);
-      document.head.removeChild(el);
     };
   }, []);
 
@@ -782,6 +777,15 @@ function ScrollToTop() {
 export default function App() {
   const [entered, setEntered] = useState(false);
   const [loaderVisible, setLoaderVisible] = useState(true);
+
+  useEffect(() => {
+    const el = document.createElement("style");
+    el.textContent = BASE_STYLES;
+    document.head.appendChild(el);
+    return () => {
+      document.head.removeChild(el);
+    };
+  }, []);
 
   const handleDone = () => {
     setEntered(true);

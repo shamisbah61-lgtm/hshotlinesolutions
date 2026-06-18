@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Hotel, Compass, Award, ShieldAlert, Star, Bed, Key, Users } from "lucide-react";
+import { Hotel, Award, ShieldAlert, Star, Bed, Key, Users } from "lucide-react";
 import Cursor from "./Cursor";
 import SubpageNav from "./SubpageNav";
 import SubpageFooter from "./SubpageFooter";

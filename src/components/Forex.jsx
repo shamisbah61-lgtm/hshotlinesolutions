@@ -112,7 +112,7 @@ export default function Forex() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[rgba(255,255,255,0.03)] text-[0.85rem]">
-                  {currencyRates.map((c, i) => (
+                  {currencyRates.map((c) => (
                     <tr key={c.code} className="hover:bg-[rgba(201,168,76,0.02)] transition-colors">
                       <td className="py-4 flex items-center gap-3 font-medium">
                         <span className="text-xl">{c.flag}</span>

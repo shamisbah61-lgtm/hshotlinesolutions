@@ -17,10 +17,6 @@ export default function SubpageNav() {
     document.body.style.overflow = menuOpen ? "hidden" : "";
   }, [menuOpen]);
 
-  // Reset menu on navigation change
-  useEffect(() => {
-    setMenuOpen(false);
-  }, [location]);
 
   const navLinks = [
     { label: "Home", path: "/" },
@@ -46,7 +42,7 @@ export default function SubpageNav() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       >
-        <Link to="/" className="leading-none flex-shrink-0" style={{ textDecoration: "none" }}>
+        <Link to="/" onClick={() => setMenuOpen(false)} className="leading-none flex-shrink-0" style={{ textDecoration: "none" }}>
           <img src="/images/hsbglogoo.png" alt="Hotline Solution"
             className="h-auto block object-contain" style={{ width: "clamp(80px,22vw,108px)" }} />
         </Link>
@@ -102,6 +98,7 @@ export default function SubpageNav() {
               <Link
                 key={l.label}
                 to={l.path}
+                onClick={() => setMenuOpen(false)}
                 className="nav-lnk f-dm no-underline py-4 border-b border-[rgba(255,255,255,0.05)] last:border-b-0 w-full"
                 style={{
                   fontSize: "0.72rem",

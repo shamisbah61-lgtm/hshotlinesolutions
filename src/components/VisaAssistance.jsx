@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { BadgeCheck, Globe, Compass, Landmark, Users, Clock, CheckSquare, Sparkles } from "lucide-react";
+import { BadgeCheck, Globe, Compass, Landmark, Users, Clock, CheckSquare } from "lucide-react";
 import Cursor from "./Cursor";
 import SubpageNav from "./SubpageNav";
 import SubpageFooter from "./SubpageFooter";

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Plane, Compass, Headphones, Award, ShieldAlert, Sparkles, Navigation, Globe } from "lucide-react";
+import { Plane, Compass, Headphones, Award, ShieldAlert, Navigation, Globe } from "lucide-react";
 import Cursor from "./Cursor";
 import SubpageNav from "./SubpageNav";
 import SubpageFooter from "./SubpageFooter";

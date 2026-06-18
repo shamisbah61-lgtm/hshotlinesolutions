@@ -389,7 +389,7 @@ function MainApp() {
           aria-hidden="true"
           className="hero-video absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
         >
-          <source src="/video/Video Project.mp4" type="video/mp4" />
+          <source src="/video/video_project.mp4" type="video/mp4" />
         </video>
 
         {/* ── MOBILE: Full background photo carousel (hidden on desktop) ── */}
